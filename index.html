@@ -94,6 +94,14 @@ footer{border-top:1px solid rgba(99,153,34,.12);text-align:center;padding:1.5rem
 }
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;}
 .fade-up.visible{opacity:1;transform:none;}
+
+.edu-cards{display:flex;flex-direction:column;gap:1rem;margin-top:1rem;}
+.edu-card{background:rgba(26,48,10,.6);border:1px solid rgba(99,153,34,.2);border-radius:12px;padding:1.25rem 1.5rem;border-left:3px solid #639922;}
+.edu-year{font-size:.75rem;color:#639922;font-weight:600;letter-spacing:.08em;margin-bottom:.35rem;}
+.edu-title{font-weight:600;color:#e2f0cc;font-size:.98rem;margin-bottom:.25rem;}
+.edu-place{font-size:.87rem;color:#7a9e50;font-weight:500;margin-bottom:.4rem;}
+.edu-list{margin-top:.5rem;padding-left:1.2rem;}
+.edu-list li{font-size:.87rem;color:#7a9e50;line-height:1.7;margin-bottom:.2rem;}
 </style>
 </head>
 <body>
@@ -138,37 +146,56 @@ footer{border-top:1px solid rgba(99,153,34,.12);text-align:center;padding:1.5rem
 </section>
 
 <section class="section-wrap fade-up" id="experience">
-  <div class="section-label">Tajriba va Ta'lim</div>
-  <h2 class="section-title">Martaba yo'lim</h2>
+  <div class="section-label">Ta'lim va Tajriba</div>
+  <h2 class="section-title">Ta'lim</h2>
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-year">2022 — hozir</div>
+      <div class="edu-title">Bioinformatika va Biofizika — Bakalavr, 4-bosqich</div>
+      <div class="edu-place">O'zbekiston Milliy Universiteti</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2020 — 2022</div>
+      <div class="edu-title">O'rta ta'lim (yuqori bosqich)</div>
+      <div class="edu-place">"Ilmu Ziyo School" xususiy maktabi</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2011 — 2020</div>
+      <div class="edu-title">Umumiy o'rta ta'lim</div>
+      <div class="edu-place">Umumta'lim maktabi</div>
+    </div>
+  </div>
 
-  <div class="timeline">
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <span class="tl-year">2021 — hozir</span>
-      <div class="tl-title">Bioinformatika va Biofizika — Talaba (4-bosqich)</div>
-      <div class="tl-place">O'zbekiston Milliy Universiteti</div>
-      <div class="tl-desc">Bioinformatika, genomika, molekulyar biologiya va biofizika fanlarini chuqur o'rganmoqdaman. O'z yo'nalishim bo'yicha mentorlik tajribasiga egaman.</div>
+  <h2 class="section-title" style="margin-top:3rem">Ish Tajribasi</h2>
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-year">2022 — 2024</div>
+      <div class="edu-title">Koordinator va Mentor</div>
+      <div class="edu-place">Yuksalish Liderlar Akademiyasi</div>
+      <ul class="edu-list">
+        <li>Talabalar bilan ishlash va ularni rivojlantirish</li>
+        <li>Jamoaviy loyihalarni tashkil etish</li>
+        <li>Liderlik ko'nikmalarini rivojlantirishga hissa qo'shish</li>
+      </ul>
     </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <span class="tl-year">2023 — hozir</span>
-      <div class="tl-title">Koordinator va Mentor</div>
-      <div class="tl-place">Yuksalish Liderlar Akademiyasi</div>
-      <div class="tl-desc">3 oylik "Alif" guruhini muvaffaqiyatli tamomlash orqali lider unvoniga ega bo'ldim. Hozirda koordinator sifatida yoshlarning rivojlanishiga yo'naltirib bormoqdaman.</div>
+    <div class="edu-card">
+      <div class="edu-year">2026 — hozir</div>
+      <div class="edu-title">Mentor — Bioinformatika va Biofizika yo'nalishi</div>
+      <div class="edu-place">O'zbekiston Milliy Universiteti</div>
+      <ul class="edu-list">
+        <li>Talabalarga o'quv jarayonida yordam berish</li>
+        <li>Murakkab mavzularni tushuntirish</li>
+        <li>Amaliy bilimlarni mustahkamlash</li>
+      </ul>
     </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <span class="tl-year">2023 — hozir</span>
-      <div class="tl-title">Bioinformatika va Biofizika yo'nalishlari bo'yicha Mentor</div>
-      <div class="tl-place">O'zbekiston Milliy Universiteti</div>
-      <div class="tl-desc">Bioinformatika va biofizika yo'nalishi bo'yicha talabalar mentorligi tajribasiga egaman.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <span class="tl-year">— 2021</span>
-      <div class="tl-title">O'rta Ta'limni Tamomlash</div>
-      <div class="tl-place">Ilmu Ziyo School xususiy maktabi</div>
-      <div class="tl-desc">Sifatli ta'lim muhitida o'qib, O'zbekiston Milliy Universitetiga muvaffaqiyatli kirish imkoniga ega bo'ldim.</div>
+  </div>
+
+  <h2 class="section-title" style="margin-top:3rem">Qo'shimcha Ta'lim</h2>
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-year">2022</div>
+      <div class="edu-title">"Alif" dasturi (3 oy) — Dastur bitiruvchisi va lider</div>
+      <div class="edu-place">Yuksalish Liderlar Akademiyasi</div>
     </div>
   </div>
 </section>
